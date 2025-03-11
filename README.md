@@ -11,10 +11,12 @@ Learning how to break a WPA2 wifi hash using `ESP32-WROOM-32~` platform boards a
 
 ## Prerequisites
 Install Putty with an admin PowerShell window:
-`winget install PuTTY.PuTTY`
-(as a failsafe, you can use the [web serial](https://serial.huhn.me/) interface to run commands. this is less reliable)
-Install Drivers from here:
-https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads
+```
+winget install PuTTY.PuTTY
+```
+(as a failsafe, you can use the [web serial](https://serial.huhn.me/) interface to run commands. this is less reliable)  
+Install Drivers from here:  
+https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads  
 *(Don't forget to restart your computer after installing the drivers)*
 
 ## Firmware Install
