@@ -2,7 +2,7 @@
 Wifi hacking activity with ESP32-WROOM-ESP boards.
 
 ## Assumptions
-This activity assumes you are already acquainted with both the hacking code of ethics and basic linux/windows administration (installing drivers and programs, manipulating text files).
+This activity assumes you are already acquainted with both the hacking code of ethics and basic linux/windows administration (installing drivers and programs, manipulating text files). All instructions are for Windows 11 (and assumed to work on Windows 10). If you have a Mac, use bootcamp or borrow a windows laptop from someone for this session.
 
 ![ethics](https://www.hackthebox.com/storage/blog/NtpLUlwRjbuvPc5vzMR3UQ9bFHp2GKBz.jpg)
 
@@ -15,6 +15,7 @@ Install Putty with an admin PowerShell window:
 (as a failsafe, you can use the [web serial](https://serial.huhn.me/) interface to run commands. this is less reliable)
 Install Drivers from here:
 https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads
+*(Don't forget to restart your computer after installing the drivers)*
 
 ## Firmware Install
 - Go to the [ESPWebTool Web Updater]([https://spacehuhn.github.io/esp8266_flasher/](https://esp.huhn.me/))
@@ -45,6 +46,6 @@ On the putty initial screen, make sure the "Session" categoty is selected.
 As pictured below, make sure to select COM3 port and change the speed to `115200`.  
 ![Alt Text](https://github.com/bsucyber/wifi-hacking/blob/main/putty-settings-2.png)
 
-As pictured below, enable "Forced" for both local echo and local line editing. This will allow the terminal interface be usable and safe to operate on campus without misfires (as long as you carefully consider each command before sending).
+As pictured below, enable "Forced" for both local echo and local line editing. This will allow the terminal interface be usable and safe to operate on campus without misfires (as long as you carefully consider each command before sending).  
 ![Alt Text](https://github.com/bsucyber/wifi-hacking/blob/main/putty-settings.png)
 
