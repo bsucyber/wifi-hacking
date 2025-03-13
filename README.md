@@ -20,7 +20,7 @@ https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downlo
 *(Don't forget to restart your computer after installing the drivers)*
 
 ## Firmware Install
-- Go to the [ESPWebTool Web Updater]([https://spacehuhn.github.io/esp8266_flasher/](https://esp.huhn.me/))
+- Go to the [ESPWebTool Web Updater](https://spacehuhn.github.io/esp8266_flasher/](https://esp.huhn.me/))
 - With your device plugged in, click connect (only works on Chromium/Chrome)
 - Use the following table to select the appropriate files and place them at the corresponding address
 - Enter the address shown as the blue text in the appropriate space and add the file linked to that blue text
@@ -51,3 +51,19 @@ As pictured below, make sure to select COM3 port and change the speed to `115200
 As pictured below, enable "Forced" for both local echo and local line editing. This will allow the terminal interface be usable and safe to operate on campus without misfires (as long as you carefully consider each command before sending).  
 ![Alt Text](https://github.com/bsucyber/wifi-hacking/blob/main/putty-settings.png)
 
+## Next Steps
+Once you've connected you are good to go! 
+
+There are a ton of different features that you can check out.
+
+Here is the offical wiki where you can find all the commands:
+[ESP32 Marauder Wiki](https://github.com/justcallmekoko/ESP32Marauder/wiki)
+
+## Note about Wifi scans
+Because we don't have sd cards, captured packets from wifi scans must be output to the terminal.  
+to do this use the -serial option on the wifi scan you want to perform.  
+For example: 
+```
+sniffpmkid -serial // Sniffs and displays captured pmkid/eapol frames sent during WiFi authentication sessions
+```
+It may be a good idea to enable logging in Putty so you can access the pcap data afterwards. You'll have to parse it back into a pcap file if you want to analyze it.
