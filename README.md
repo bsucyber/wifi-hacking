@@ -62,8 +62,16 @@ Here is the offical wiki where you can find all the commands:
 ## Note about Wifi scans
 Because we don't have sd cards, captured packets from wifi scans must be output to the terminal.  
 to do this use the -serial option on the wifi scan you want to perform.  
-For example: 
+For example:
+```
+sniffap
+```  
+```
+select -a "AP"
+```  
+Give the SSID of the access point to target  
 ```
 sniffpmkid -serial // Sniffs and displays captured pmkid/eapol frames sent during WiFi authentication sessions
 ```
-It may be a good idea to enable logging in Putty so you can access the pcap data afterwards. You'll have to parse it back into a pcap file if you want to analyze it.
+
+It may be a good idea to enable logging in Putty so you can access the pcap data afterwards. You'll have to parse it back into a pcap file if you want to analyze it.  
