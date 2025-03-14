@@ -20,7 +20,7 @@ https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downlo
 *(Don't forget to restart your computer after installing the drivers)*
 
 ## Firmware Install
-- Go to the [ESPWebTool Web Updater](https://spacehuhn.github.io/esp8266_flasher/](https://esp.huhn.me/))
+- Go to the [ESPWebTool Web Updater](https://esp.huhn.me/)
 - With your device plugged in, click connect (only works on Chromium/Chrome)
 - Use the following table to select the appropriate files and place them at the corresponding address
 - Enter the address shown as the blue text in the appropriate space and add the file linked to that blue text
